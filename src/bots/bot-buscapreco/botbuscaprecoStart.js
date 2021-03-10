@@ -35,4 +35,5 @@ async function botprecostart(){
         site:'MAGAZINE-LUIZA'
     })
 };
-botprecostart();
+//botprecostart();
+module.exports=botprecostart;

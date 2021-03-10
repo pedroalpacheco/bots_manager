@@ -23,9 +23,9 @@ async function botamagazineLuiza(consulta){
 
     let vlrpreco ='';
     const valor = await page.evaluate(()=>{
-        let preco = document.querySelector('.price');
+        let preco = document.querySelector('span.price').textContent;
         if (preco !=null) {
-            let preco = document.querySelector('.price').textContent;
+            let preco = document.querySelector('span.price').textContent;
             let semcifrao = preco.replace('R$ ','');
             let semvirgula = semcifrao.replace(',','.').trim();
             return semvirgula

@@ -39,4 +39,6 @@ async function botLoginStart(){
     await browser.close();
 }
 
-botLoginStart();
+//botLoginStart();
+
+module.exports=botLoginStart;
